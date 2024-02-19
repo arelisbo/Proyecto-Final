@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,600&family=Satisfy&display=swap');
+
+.registro{
+    min-height: 100vh;
+    display: flex;
+    padding: 100px 0px;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(to right, #030303, #012709); 
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/937/465/desktop-wallpaper-italian-flag-italy-flag.jpg);
+}
+
+.text{
+    font-family:  'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.text1{
+    font-family:'Poppins', sans-serif;
+    font-weight: 800;
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+}
+.card{
+    -webkit-box-shadow: 15px 15px 39px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 15px 15px 39px 0px rgba(0,0,0,0.52);
+    box-shadow: 15px 15px 39px 0px rgba(0,0,0,0.52);
+}
+
+.form{
+    padding: 30px;
+}
+
+.alert-danger {
+    color: rgb(158, 26, 26);
+    border-color: aliceblue;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.container-error-message {
+    padding: 3px;
+}

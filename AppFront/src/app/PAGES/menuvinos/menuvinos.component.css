@@ -1,0 +1,60 @@
+:root{
+    --verde:#00A149;
+    --blanco:#fff;
+    --rojo:#881014;
+    --oscuro:#000;
+    --titulos:'Arima Madurai',cursive;
+    --parrafos:'Mulish', sans-serif;
+}
+.contenedor-vinos{
+    border:2px solid var(--oscuro);
+}
+h1{
+    color: var(--verde);
+    text-align: center;
+    font-family: var(--titulos);
+}
+.contenedor-tarjetas{
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid var(--rojo);
+}
+.card-text{
+    font-family: var(--parrafos);
+}
+.cover {
+    position:relative;
+    display:block;
+}
+
+.cover,
+img {
+    display: block;
+    position: relative;
+    height:20vh;
+    border-radius: 20px;
+    width:100%;
+    object-fit: cover;
+}
+
+.cover p {
+    font-family: 'Satisfy';
+    font-size: 50px;
+    background: linear-gradient(0 0 0/.5);
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    left: 15px;
+    padding: 5px;
+    width: 100%;
+    font-weight: bolder;
+}

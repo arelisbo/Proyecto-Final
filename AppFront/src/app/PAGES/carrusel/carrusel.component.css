@@ -1,0 +1,12 @@
+#carouselExampleSlidesOnly{
+    margin-top: 10%;
+   
+}
+.carousel-inner{
+position: absolute;
+top: 10%;
+left: 5%; 
+right: 10%;
+border: 2px solid #881014;
+
+}

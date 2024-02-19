@@ -1,0 +1,32 @@
+
+footer {
+  display: flex;
+  justify-content: center;
+  /* height: 13vh; */
+  background-color: rgb(40, 39, 39);
+  text-align: center;
+  /* padding-right: 00px; */
+  font-family:'Poppins', sans-serif;
+  bottom:0;
+  color:white;
+  margin: 0px;
+}
+
+.footerPie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px 0px 0px;
+}
+
+.iconos {
+  position: relative;
+  flex-direction: row;
+  color: white;
+  background-color: rgb(40, 39, 39);
+  margin: 0;
+  padding: 30px;
+  cursor: pointer;
+}
+
+

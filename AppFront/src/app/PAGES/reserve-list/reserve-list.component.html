@@ -1,0 +1,43 @@
+<section class="bg-dark d-flex justify-content-center ">
+  <div class=" bg-white container" style="width: auto;">
+    <div class="table table-bordered">
+      <h1>Reservas</h1>
+      <button>Crear nuevo</button>
+     
+      <div class="input_search">
+        <input type="search" placeholder="Buscar" />
+        <i class="bi bi-search" id="search"></i>
+      </div>
+      <table calss="tabla">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Email</th>
+            <th scope="col">Telefono</th>
+            <th scope="col"># asistentes</th>
+            <th scope="col">Ocasión</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Hora</th>
+          <th>Operaciones <i class="bi bi-chevron-expand"></i></th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr *ngFor="let Reserve of reservas">
+            <th scope="row"></th>
+            <td>{{ Reserve.name }}</td>
+            <td>{{ Reserve.last_name }}</td>
+            <td>{{ Reserve.email }}</td>
+            <td>{{ Reserve.phone }}</td>
+            <td>{{ Reserve.number_people }}</td>
+            <td>{{ Reserve.special_occasions }}</td>
+            <td>{{ Reserve.date_reserve }}</td>
+            <td>{{ Reserve.hour_reserve }}</td>
+            <!-- <td><a routerLink="/reserva/{{reserve.reserve._id}}"> <button><i class="bi bi-pencil-square" id="icons"></i></button> </a>
+              <a href="" onclick="delete(reserve._id)"> <button><i  class="bi bi-trash" id="icons"></i></button>  </a>
+            </td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>

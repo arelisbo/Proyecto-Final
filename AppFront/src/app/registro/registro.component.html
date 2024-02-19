@@ -1,0 +1,195 @@
+
+  <div class="registro d-flex align-item-center justify-content-center">
+    <div class="card" style="width: 50rem">
+      <h1 class="text1">Reserva</h1>
+      <div class="d-flex align-item-center justify-content-center mt-4">
+        <img 
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/87/9c/84/en-espera-de-dhinora.jpg?w=600&h=400&s=1"
+          class="img-fluid"
+        />
+      </div>
+      <form  [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="card-body row row-col form text">
+        <div class="col-12 col-md-6">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Nombres</label>
+          <input
+            type="name"
+            formControlName="name"
+            class="form-control bg-light"
+            id="exampleFormControlInput1"
+          />
+          <div class="alert-danger" *ngIf="name.invalid && (name.dirty || name.touched)">
+            <div class="container-error-message">
+              Digite su nombre
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-6">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Apellidos</label>
+          <input
+            type="last_name"
+            formControlName="last_name"
+            class="form-control"
+            id="exampleFormControlInput1"
+          />
+          <div class="alert-danger" *ngIf="last_name.invalid && (last_name.dirty || last_name.touched)">
+            <div class="container-error-message">
+              Digite su apellido
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mt-3">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            formControlName="email"
+            id="exampleFormControlInput1"
+            placeholder="email@ejemplo.com"
+          />
+          <div class="alert-danger" *ngIf="email.invalid && (email.dirty || email.touched)">
+            <div class="container-error-message" *ngIf="email.errors.required">
+              Email es requerido
+            </div>
+            <div class="container-error-message" *ngIf="email.errors.pattern">
+              Digite un correo valido
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mt-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Teléfono</label>
+          <input
+            type="phone"
+            class="form-control"
+            formControlName="phone"
+            id="exampleFormControlInput1"
+          />
+          <div class="alert-danger" *ngIf="phone.invalid && (phone.dirty || phone.touched)">
+            <div class="container-error-message" *ngIf="phone.errors.required">
+              Digite un número telefónico
+            </div>
+            <div class="container-error-message" *ngIf="phone.errors.minlength">
+              El número de celular debe tener al menos 10 caracteres
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mt-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Número de asistentes</label>
+          <input
+            type="number_people"
+            formControlName="number_people"
+            class="form-control"
+            id="exampleFormControlInput1"
+          />
+          <div class="alert-danger" *ngIf="number_people.invalid && (number_people.dirty || number_people.touched)">
+            <div class="container-error-message">
+              Digite el número de asistentes
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mt-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Elige tu ocasión</label>
+            <select class= "form-select" name="" id="">
+            <option value="1">Cumpleaños</option>
+            <option value="2">Cena romantica</option>
+            <option value="3">Despedida de soltero</option>
+            <option value="4">Despedida de soltera </option>
+            <option value="5">Amor y amistad</option>
+            <option value="6">Día de la madre</option>
+            <option value="7">Día del padre</option>
+            <option value="8">Grado</option>
+            <option value="9">Aniversario</option>
+            <option value="10">Almuerzo de negocios</option>
+            <option value="11">Cena de negocios</option>
+            <option value="12">Propuesta de matrimonio</option>
+            <option value="13">Ocasional</option>
+            <option value="14">Otro</option>
+          <input
+            type="special_occasions"
+            class="form-control"
+            formControlName="special_occasions"
+            id="exampleFormControlInput1"
+          />
+        </select>
+          <div class="alert-danger" *ngIf="special_occasions.invalid && (special_occasions.dirty || special_occasions.touched)">
+            <div class="container-error-message">
+              Elige una ocacion
+            </div>
+          </div>
+        </div>
+        <div class=" col-12 col-md-6 mt-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Fecha</label>
+          <input
+            type="date_reserve"
+            class="form-control"
+            formControlName="date_reserve"
+            id="exampleFormControlInput1"
+            placeholder="dd-mm-aaaa"
+          />
+          <div class="alert-danger" *ngIf="date_reserve.invalid && (date_reserve.dirty || date_reserve.touched)">
+            <div class="container-error-message">
+              Digite una fecha
+            </div>
+          </div>
+        </div>
+        <div class=" col-12 col-md-6 mt-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Hora</label>
+          <input
+            type="hour_reserve"
+            class="form-control"
+            formControlName="hour_reserve"
+            id="exampleFormControlInput1"
+            placeholder="hh-mm am"
+          />
+          <div class="alert-danger" *ngIf="hour_reserve.invalid && (hour_reserve.dirty || hour_reserve.touched)">
+            <div class="container-error-message">
+              Digite una hora
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Recomendaciones</label>
+            <input
+            type="info"
+            class="form-control"
+            formControlName="info"
+            id="exampleFormControlInput1"
+          />
+        </div>
+        <button class="btn btn-danger btn-info text-white w-100 mt-4 fw-semibold shadow-sm text" 
+          data-bs-toggle="modal" data-bs-target="#exampleModal"
+          type="submit" [disabled]="!registerForm.valid"> Reservar
+        </button>
+      </div>
+    </form>
+    </div>
+  </div>
+
+  <!-- Modal  -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Reserva exitosa</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Gracias por reservar con Rissotto Ristorante, sera un placer atenderte.
+        </div>
+        <div class="modal-footer">
+          <a href="/reserva"> <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Crear nueva reserva</button> </a>
+          <a href="/menu"> <button type="button" class="btn btn-primary">Ir al menú</button> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+

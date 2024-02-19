@@ -1,0 +1,71 @@
+<div class="Video">
+  <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" class="mivideo">
+    <source src=" ../assets/Rissotto.mp4">
+  </video>
+</div>
+
+<section class="contenedor">
+  <div class="card border border-0" style="width: 40rem;">
+    <div class="card-body d-none d-md-block">
+      <h5 class="card-title chef">Nosotros</h5>
+      <p class="card-text italiana">Lo que hace tan especial a la gastronomía italiana, es la combinación de pasión,
+        personalidad, tradición y deliciosos ingredientes. En El Italiano buscamos la perfección en cada uno de
+        nuestros platillos, con el fin de transportar a nuestros comensales a la bellísima Italia, brindándoles a su
+        paladar un sabor auténticamente italiano. Estamos seguros de que te enamorarás de nuestras pastas, risotti,
+        pizza, comida del mar, carnes, sopas y postres italianos.</p>
+    </div>
+  </div>
+
+  <div class="card primeraImagen" style="width: 30rem;">
+    <img class="img-fluid img1 d-none d-md-block"
+      src="https://tvazteca.brightspotcdn.com/dims4/default/bb1a31b/2147483647/strip/true/crop/850x850+350+0/resize/928x928!/format/jpg/quality/80/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F23%2F09%2Faf6c24d94d5c9b50fd61aeba3492%2Frestaurantes-italianos-en-cdmx.jpg">
+  </div>
+</section>
+
+
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <button><p href="http://localhost:4200/reserva">Reserva ya</p></button>
+      <img src="https://www.italcamara-es.com/wp-content/uploads/2019/02/concurso-900.jpg"
+        class=" img-fluid d-block w-100" alt="">
+    </div>
+    <div class="carousel-item">
+      <button><p>Reserva ya</p></button>
+      <img
+        src="https://images.pexels.com/photos/1049626/pexels-photo-1049626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class=" img-fluid d-block w-100" alt="">>
+    </div>
+    <div class="carousel-item">
+      <button><p>Reserva ya</p></button>
+      <img
+        src="https://images.pexels.com/photos/1707957/pexels-photo-1707957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class=" img-fluid d-block w-100" alt="">
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <section class="cardChef" >
+      <img src="https://www.diariodenavarra.es/uploads/2015/12/22/60b0f2b6eefbf.jpeg" class="card-img-top ps-0 d-none d-md-block"
+        alt="chef del restaurante">
+        <div class="resumenChef d-none d-md-block">
+        <h5 class="card-title nuestroChef">Nuestro chef</h5>
+        <p class="card-text textoChef">El chef ejecutivo es el líder de la cocina de un restaurante y su papel es fundamental para
+          el éxito del negocio. En primer lugar, es el responsable de crear el menú, una  tarea  que implica una gran
+          creatividad y habilidad para seleccionar los ingredientes adecuados y crear combinaciones de sabores
+          innovadoras y atractivas. Además, el chef ejecutivo también debe estar al tanto de las tendencias
+          gastronómicas actuales y tener una buena comprensión de las preferencias del público objetivo del restaurante.
+          Hoy en día, una buena manera de convertirse en el chef ejecutivo de un restaurante es a través del Máster en
+          Dirección e Innovación en Restaurantes de Barcelona Culinary Hub (BCH)..</p>
+        </div>
+  </section>
+
+<router-outlet></router-outlet>
